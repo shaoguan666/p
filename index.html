@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="js/artDialog/skins/default.css" type="text/css"/>
     <script src="js/laydate.js"></script>
     <script src="js/Home_page.js"></script>
-    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=d7dc89416cb76d315e129827e9223d8e&plugin=AMap.Weather,AMap.ControlBar,AMap.ToolBar"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=f41da3c34e62d5fcc2175d4ecfaaae11&plugin=AMap.Weather,AMap.ControlBar,AMap.ToolBar"></script>
     <meta charset="UTF-8">
     <title>大数据管理平台</title>
 
@@ -21,11 +21,11 @@
     <div class="index_nav" >
         <ul style="height: 30px; margin-bottom: 0px;">
             <li class="l_left total_chose_fr nav_active">实时监测</li>
-            <li class="l_left total_chose_pl" >统计分析一</li>
-            <li class="l_left total_chose_pl">统计分析二</li>
-            <li class="r_right total_chose_pl">统计分析三</li>
-            <li class="r_right total_chose_pl">统计分析四</li>
-            <li class="r_right total_chose_pl">统计分析五</li>
+            <li class="l_left total_chose_pl" >交通流量分析</li>
+            <li class="l_left total_chose_pl">环境监测数据</li>
+            <li class="r_right total_chose_pl">安全事件统计</li>
+            <li class="r_right total_chose_pl">设备健康分析</li>
+            <li class="r_right total_chose_pl">人员行为分析</li>
         </ul>
         <div class="total_chose_box" style="display: none;">
             <div style="height: 32px;"></div>
@@ -107,55 +107,55 @@
                                 <span class="scroll_title">环境污染警示</span>
                                 <span class="scroll_level scroll_level01">一级</span>
                                 <a class="localize"></a>
-                                <span class="scroll_timer">25-05-13/9:52</span>
+                                <span class="scroll_timer">2023-10-26/10:30</span>
                             </div>
                             <div class="msg_cage">
-                                <a class="localize_title">排放污水含铅元素超标</a>
+                                <a class="localize_title">工业废水PH值异常</a>
                             </div>
                             <div class="msg_cage">
-                                <a class="localize_msg">特瑞熙新材料化工厂</a>
+                                <a class="localize_msg">成都高新西区某化工厂</a>
                             </div>
                         </div>
                             <div class="message_scroll">
                                 <div class="scroll_top">
-                                    <span class="scroll_title">数据流量警示</span>
+                                    <span class="scroll_title">网络攻击警示</span>
                                     <span class="scroll_level scroll_level03">三级</span>
                                     <a class="localize"></a>
-                                    <span class="scroll_timer">25-05-13/9:52</span>
+                                    <span class="scroll_timer">2023-10-26/10:35</span>
                                 </div>
                                 <div class="msg_cage">
-                                    <a class="localize_title">下载大量视频</a>
+                                    <a class="localize_title">服务器遭遇DDoS攻击</a>
                                 </div>
                                 <div class="msg_cage">
-                                    <a class="localize_msg">www.baidu.xingchen.com</a>
+                                    <a class="localize_msg">大数据平台核心服务器</a>
                                 </div>
                             </div>
                             <div class="message_scroll">
                                 <div class="scroll_top">
-                                    <span class="scroll_title">犯罪警示</span>
+                                    <span class="scroll_title">异常取款警示</span>
                                     <span class="scroll_level scroll_level02">二级</span>
                                     <a class="localize"></a>
-                                    <span class="scroll_timer">25-05-13/9:52</span>
+                                    <span class="scroll_timer">2023-10-26/10:40</span>
                                 </div>
                                 <div class="msg_cage">
-                                    <a class="localize_title">2584615954账户取走大量现金</a>
+                                    <a class="localize_title">高风险地区大额取现</a>
                                 </div>
                                 <div class="msg_cage">
-                                    <a class="localize_msg">中国农业银行</a>
+                                    <a class="localize_msg">建设银行春熙路支行</a>
                                 </div>
                             </div>
                             <div class="message_scroll">
                                 <div class="scroll_top">
-                                    <span class="scroll_title">踩踏事故警示</span>
+                                    <span class="scroll_title">人群聚集警示</span>
                                     <span class="scroll_level scroll_level01">一级</span>
                                     <a class="localize"></a>
-                                    <span class="scroll_timer">25-05-13/9:52</span>
+                                    <span class="scroll_timer">2023-10-26/10:45</span>
                                 </div>
                                 <div class="msg_cage">
-                                    <a class="localize_title">人员过于密集</a>
+                                    <a class="localize_title">核心商业区人流密度过高</a>
                                 </div>
                                 <div class="msg_cage">
-                                    <a class="localize_msg">解放碑附近</a>
+                                    <a class="localize_msg">太古里商圈</a>
                                 </div>
                             </div>
                         </div>
@@ -183,19 +183,10 @@
                         <div class="display_type_box display_box" style="display: none;overflow:auto">
                             <div class="display_type_center_box">
                                 <ul class="display_type_inner_box" id="layerList">
-                                    <li class="display_type_msg"><input id="zt_4" type="checkbox" class="display_type_chose"/> 危化品企业</li>
-                                    <li class="display_type_msg"><input  id="zt_1" type="checkbox" class="display_type_chose"/>仓库</li>
-                                    <li class="display_type_msg"><input  id="zt_5" type="checkbox" class="display_type_chose"/>学校</li>
-                                    <li class="display_type_msg"><input  id="zt_6" type="checkbox" class="display_type_chose"/>医疗卫生</li>
-                                    <li class="display_type_msg"><input  id="zt_2" type="checkbox" class="display_type_chose"/>加油站</li>
-                                    <li class="display_type_msg"><input  id="zt_0" type="checkbox" class="display_type_chose"/>停车场</li>
-                                    <li class="display_type_msg"><input  id="zt_3" type="checkbox" class="display_type_chose"/>派出所</li>
-                                    <li class="display_type_msg"><input  id="zt_7" type="checkbox" class="display_type_chose"/>应急避难场所</li>
-                                    <li class="display_type_msg">----------------------------------</li>
-                                    <li class="display_type_msg"><input id="zt_14" type="checkbox" class="display_type_chose" />危化品运输车辆</li>
-                                    <li class="display_type_msg"><input id="zt_11" type="checkbox" class="display_type_chose" />监控设备</li>
-                                    <li class="display_type_msg"><input id="zt_13" type="checkbox" class="display_type_chose" />巡逻警员</li>
-                                    <li class="display_type_msg"><input id="zt_12" type="checkbox" class="display_type_chose" />巡逻警车</li>
+                                    <li class="display_type_msg"><input id="zt_monitor_device" type="checkbox" class="display_type_chose"/> 监控设备</li>
+                                    <li class="display_type_msg"><input id="zt_environmental_sensor" type="checkbox" class="display_type_chose"/> 环境监测装置</li>
+                                    <li class="display_type_msg"><input id="zt_patrol_robot" type="checkbox" class="display_type_chose"/> 巡逻机器人</li>
+                                    <li class="display_type_msg"><input id="zt_patrol_drone" type="checkbox" class="display_type_chose"/> 巡逻无人机</li>
                                 </ul>
                             </div>
                             <div class="display_type_funct_box">
@@ -314,7 +305,7 @@
                     <div class="dataAllBorder02" id="map_title_innerbox">
                         <div class="map_title_box">
                             <div class="map_title_innerbox">
-                                <div class="map_title" style="background-image: url(img/second_title.png);">分析数据一</div>
+                                <div class="map_title" style="background-image: url(img/second_title.png);">异常事件扫描</div>
                             </div>
                             <div >
                                 <select id="selLayer" style="width:100px;">
@@ -329,12 +320,12 @@
                     <div class="dataAllBorder02" id="map_title_innerbox1" style="display: none; position: relative;">
                         <div class="map_title_box">
                             <div class="map_title_innerbox">
-                                <div class="map_title" style="background-image: url(img/second_title.png);">xxxxx条件扫描</div>
+                                <div class="map_title" style="background-image: url(img/second_title.png);">高级条件扫描</div>
                             </div>
                         </div>
                         <ul class="tab_msg_box">
-                           <li class="tab_msg tab_msg01 tab_msg_current">xxxxx</li>
-                            <li class="tab_msg tab_msg02">xxx</li>
+                           <li class="tab_msg tab_msg01 tab_msg_current">环境威胁</li>
+                            <li class="tab_msg tab_msg02">安全事件</li>
                         </ul>
                         <div class="table1">
                         <table id="table1" style="width: 100%"></table>
@@ -351,31 +342,31 @@
                 <!--顶部切换位置-->
                 <div class="dataAllBorder01 cage_cl" style="margin-top: 9% !important; height: 24%">
                     <div class="dataAllBorder02" id="cage_cl" >
-                        <div class="analysis">一天流量：</div>
+                        <div class="analysis">西南大学今日人流量：</div>
                         <ul  class="data_show_box">
-                            <li class="data_cage">0</li>
+                            <li class="data_cage">1</li>
                             <li class="data_cage">0</li>
                             <li class="data_cage" style="background-image: none;">,</li>
-                            <li class="data_cage">0</li>
-                            <li class="data_cage">0</li>
+                            <li class="data_cage">3</li>
+                            <li class="data_cage">4</li>
                             <li class="data_cage">2</li>
                         </ul>
                         <div class="depart_number_box">
                             <ul class="depart_number_cage">
-                                <li class="depart_name">流量一：</li>
+                                <li class="depart_name">一号门：</li>
                                 <li class="depart_number">3,238</li>
                             </ul>
                             <ul class="depart_number_cage">
-                                <li class="depart_name">流量二：</li>
+                                <li class="depart_name">二号门：</li>
                                 <li class="depart_number">1,630</li>
                             </ul>
                             <ul class="depart_number_cage" style="margin-bottom: 0px;">
-                                <li class="depart_name">流量三：</li>
+                                <li class="depart_name">三号门：</li>
                                 <li class="depart_number">4,251</li>
                             </ul>
                             <ul class="depart_number_cage" style="margin-bottom: 0px;">
-                                <li class="depart_name">流量四：</li>
-                                <li class="depart_number">24</li>
+                                <li class="depart_name">五号门：</li>
+                                <li class="depart_number">1000</li>
                             </ul>
                         </div>
                     </div>
@@ -400,50 +391,50 @@
                                 <th style="width: 18%">名称</th>
                                 <th>归属</th>
                                 <th>程度</th>
-                                <th>范围)</th>
+                                <th>范围</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
+                                <td>有害气体</td>
+                                <td>化工厂</td>
+                                <td>高</td>
                                 <td>200m-5km</td>
                             </tr>
                             <tr>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
+                                <td>可燃物</td>
+                                <td>仓库</td>
+                                <td>中</td>
                                 <td>4km-80km</td>
                             </tr>
                             <tr>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
+                                <td>高压设备</td>
+                                <td>电站</td>
+                                <td>高</td>
                                 <td>400m-2km</td>
                             </tr>
                             <tr>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
+                                <td>危险区域</td>
+                                <td>施工工地</td>
+                                <td>中</td>
                                 <td>1km</td>
                             </tr>
                             <tr>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
+                                <td>噪音污染</td>
+                                <td>工业园区</td>
+                                <td>低</td>
                                 <td>2km</td>
                             </tr>
                             <tr>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
+                                <td>辐射源</td>
+                                <td>医院</td>
+                                <td>高</td>
                                 <td>500m-2km</td>
                             </tr>
                             <tr>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
+                                <td>生物危害</td>
+                                <td>实验室</td>
+                                <td>中</td>
                                 <td>500m-10km</td>
                             </tr>
 
@@ -460,21 +451,21 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
+                                <td>人员密集</td>
+                                <td>商场</td>
+                                <td>高</td>
                                 <td>全城</td>
                             </tr>
                             <tr>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
+                                <td>交通事故</td>
+                                <td>道路</td>
+                                <td>中</td>
                                 <td>车站</td>
                             </tr>
                             <tr>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
-                                <td>xxxxxxx</td>
+                                <td>自然灾害</td>
+                                <td>山区</td>
+                                <td>低</td>
                                 <td>-</td>
                             </tr>
 
@@ -538,19 +529,19 @@
                                 <td>500m-10km</td>
                             </tr>
                             <tr>
-                                <td>xxx</td>
+                                <td>内部通讯</td>
                                 <td>一级</td>
                                 <td>5t</td>
                                 <td>200m-5km</td>
                             </tr>
                             <tr>
-                                <td>xxxxx</td>
+                                <td>外部访问</td>
                                 <td>一级</td>
                                 <td>6t</td>
                                 <td>4km-80km</td>
                             </tr>
                             <tr>
-                                <td>xxxx</td>
+                                <td>数据库操作</td>
                                 <td>一级</td>
                                 <td>11t</td>
                                 <td>400m-2km</td>
@@ -561,7 +552,7 @@
                     </div>
                     <!--地址检索切换03-->
                     <div class="dataAllBorder02 addition_check_in" style="display: none;position: relative" >
-                        <div class="analysis" style="height: 34px;%">地址检索：</div>
+                        <div class="analysis" style="height: 34px;">地址检索：</div>
                         <div class="search_plate_box">
                             <ul class="search_separate">
                                 <li class="search_title">地址类型：</li>
@@ -591,19 +582,19 @@
                                 <li class="search_result_add">成都大学金牛校区</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" title="操作"></li>
-                                <li class="search_result_road">北京市>朝阳>东六巷</li>
+                                <li class="search_result_road">成都市>金牛区>东六巷</li>
                             </ul>
                             <ul  class="search_result">
-                                <li class="search_result_add">二十二中</li>
+                                <li class="search_result_add">成都市第二十二中学</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" title="操作"></li>
-                                <li class="search_result_road">北京市>朝阳>育苗路</li>
+                                <li class="search_result_road">成都市>青羊区>育苗路</li>
                             </ul>
                             <ul  class="search_result">
                                 <li class="search_result_add">红盛生态园</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" title="操作"></li>
-                                <li class="search_result_road">北京市>xxx>惠王陵东路</li>
+                                <li class="search_result_road">成都市>温江区>惠王陵东路</li>
                             </ul>
                             <ul  class="search_result">
                                 <li class="search_result_add">资阳汽车客运中心</li>
@@ -615,7 +606,7 @@
                                 <li class="search_result_add">黄忠公园</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" title="操作"></li>
-                                <li class="search_result_road">北京市>朝阳>同德街</li>
+                                <li class="search_result_road">成都市>武侯区>同德街</li>
                             </ul>
                         </div>
                         <!--翻页模块-->
@@ -642,52 +633,52 @@
                         <!--检索结果板块-->
                         <div class="search_sesult_box">
                             <ul  class="search_result">
-                                <li class="search_result_add danger_result">xxxxxx</li>
+                                <li class="search_result_add danger_result">易燃液体</li>
                                 <li class="danger_level level03">三级</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" title="生命周期" onclick="showLife()"></li>
-                                <li class="search_result_car car_personal">xxxxxxx</li>
-                                <li class="search_result_car car_time">xxxxxxx</li>
+                                <li class="search_result_car car_personal">生产批号: 20230510001</li>
+                                <li class="search_result_car car_time">运输单位: 顺丰速运</li>
                             </ul>
                             <ul  class="search_result">
-                                <li class="search_result_add danger_result">xxxxxx</li>
+                                <li class="search_result_add danger_result">腐蚀性气体</li>
                                 <li class="danger_level level03">三级</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" title="生命周期"></li>
-                                <li class="search_result_car car_personal">xxxxxx</li>
-                                <li class="search_result_car car_time">xxxxxxx</li>
+                                <li class="search_result_car car_personal">生产批号: 20230510002</li>
+                                <li class="search_result_car car_time">运输单位: 德邦物流</li>
                             </ul>
                             <ul  class="search_result">
-                                <li class="search_result_add danger_result">xxxxxx</li>
+                                <li class="search_result_add danger_result">放射性物质</li>
                                 <li class="danger_level level02">二级</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" title="生命周期"></li>
-                                <li class="search_result_car car_personal">xxxxxx</li>
-                                <li class="search_result_car car_time">xxxxxx制造厂</li>
+                                <li class="search_result_car car_personal">生产批号: 20230510003</li>
+                                <li class="search_result_car car_time">运输单位: 圆通速递</li>
                             </ul>
                             <ul  class="search_result">
                                 <li class="search_result_add danger_result">烟花爆竹</li>
                                 <li class="danger_level level02">二级</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" title="生命周期"></li>
-                                <li class="search_result_car car_personal">xxxxxx）</li>
-                                <li class="search_result_car car_time">xxxxxx建地化工厂</li>
+                                <li class="search_result_car car_personal">生产批号: 20230510004</li>
+                                <li class="search_result_car car_time">运输单位: 中通快递</li>
                             </ul>
                             <ul  class="search_result">
-                                <li class="search_result_add danger_result">xxxxxx</li>
+                                <li class="search_result_add danger_result">剧毒农药</li>
                                 <li class="danger_level level03">三级</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" title="生命周期"></li>
-                                <li class="search_result_car car_personal">xxxxxxx</li>
-                                <li class="search_result_car car_time">xxxxxxx</li>
+                                <li class="search_result_car car_personal">生产批号: 20230510005</li>
+                                <li class="search_result_car car_time">运输单位: 韵达快递</li>
                             </ul>
                             <ul  class="search_result">
-                                <li class="search_result_add danger_result">xxxxxx</li>
+                                <li class="search_result_add danger_result">高压气罐</li>
                                 <li class="danger_level level01">一级</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" title="生命周期"></li>
-                                <li class="search_result_car car_personal">xxxxxxx</li>
-                                <li class="search_result_car car_time">xxxxxxx</li>
+                                <li class="search_result_car car_personal">生产批号: 20230510006</li>
+                                <li class="search_result_car car_time">运输单位: 百世快递</li>
                             </ul>
                         </div>
                         <!--翻页模块-->
@@ -724,37 +715,37 @@
                                 <li class="search_result_add">便利店总部（350298100000405）</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" onclick="people()" title="操作"></li>
-                                <li class="search_result_road">北京市>武侯区>新希望路223号4楼</li>
+                                <li class="search_result_road">成都市>武侯区>新希望路223号4楼</li>
                             </ul>
                             <ul  class="search_result">
                                 <li class="search_result_add">红旗连锁（260220100003523）</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" onclick="people()" title="操作"></li>
-                                <li class="search_result_road">北京市>朝阳>建业路244号</li>
+                                <li class="search_result_road">成都市>锦江区>建业路244号</li>
                             </ul>
                             <ul  class="search_result">
                                 <li class="search_result_add">蓝海旅行社（260220100003523）</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" onclick="people()" title="操作"></li>
-                                <li class="search_result_road">北京市>朝阳>育苗路</li>
+                                <li class="search_result_road">成都市>青羊区>育苗路</li>
                             </ul>
                             <ul  class="search_result">
                                 <li class="search_result_add">吴铭火锅（350298100000405）</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" onclick="people()" title="操作"></li>
-                                <li class="search_result_road">北京市>xxx>惠王陵东路</li>
+                                <li class="search_result_road">成都市>金牛区>惠王陵东路</li>
                             </ul>
                             <ul  class="search_result">
                                 <li class="search_result_add">阿杰发艺连锁（260220100003523）</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" onclick="people()" title="操作"></li>
-                                <li class="search_result_road">书台路与骏兴路交叉口西侧</li>
+                                <li class="search_result_road">成都市>高新区>书台路与骏兴路交叉口西侧</li>
                             </ul>
                             <ul  class="search_result">
                                 <li class="search_result_add">黄忠公园（350298100000405）</li>
                                 <li class="search_location" title="定位"></li>
                                 <li class="search_eddit" onclick="people()" title="操作"></li>
-                                <li class="search_result_road">北京市>朝阳>同德街</li>
+                                <li class="search_result_road">成都市>武侯区>同德街</li>
                             </ul>
                         </div>
                         <!--翻页模块-->
@@ -826,7 +817,7 @@
 
                 <div class="dataAllBorder01 cage_cl check_decrease" style="margin-top: 1.5% !important; height: 32%; position: relative;">
                     <div class="dataAllBorder02 over_hide" style="padding: 1.2%;">
-                        <div class="analysis">xxxxx构成因素占比：</div>
+                        <div class="analysis">安全事件构成因素占比：</div>
                         <div class="danger_contain_box">
                             <div id="container_huan" style="height: 90%;width: 100%"></div>
                         </div>
@@ -834,25 +825,25 @@
 
                             <ul class="danger_depart">
                                 <li class="danger_ico" style="background-image: url(img/images/pic_ico_01.png); background-position-x: 0px"></li>
-                                <li class="data_name">xxxxx综合</li>
+                                <li class="data_name">事件综合</li>
                                 <li class="data data01">652</li>
                                 <li class="data data02">↑&nbsp&nbsp1.2%</li>
                             </ul>
                             <ul class="danger_depart">
                                 <li class="danger_ico" style="background-image: url(img/images/pic_ico_02.png); background-position-x: 0px"></li>
-                                <li class="data_name">统计一</li>
+                                <li class="data_name">消防安全</li>
                                 <li class="data data01">97</li>
                                 <li class="data data02" style="color: #ff2865;">↓&nbsp&nbsp0.3%</li>
                             </ul>
                             <ul class="danger_depart danger_depart01">
                                 <li class="danger_ico" style="background-image: url(img/images/pic_ico_03.png); background-position-x: 0px"></li>
-                                <li class="data_name">统计二</li>
+                                <li class="data_name">交通安全</li>
                                 <li class="data data01">423</li>
                                 <li class="data data02">↑&nbsp&nbsp1%</li>
                             </ul>
                             <ul class="danger_depart danger_depart01">
                                 <li class="danger_ico" style="background-image: url(img/images/pic_ico_01.png); background-position-x: 0px"></li>
-                                <li class="data_name">统计三</li>
+                                <li class="data_name">公共卫生</li>
                                 <li class="data data01">218</li>
                                 <li class="data data02">↑&nbsp&nbsp0.3%</li>
                             </ul>
@@ -870,7 +861,7 @@
                 <div class="dataAll maginS">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit1">xxxxx分析</div>
+                            <div class="data_tit1">风险分析</div>
                             <div class="data_chart" id="buyTime"></div>
                         </div>
                     </div>
@@ -878,7 +869,7 @@
                 <div class="dataAll">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit1">xxxxx类型分析</div>
+                            <div class="data_tit1">事件类型分析</div>
                             <p class="data_chart" id="Package01"></p>
                         </div>
                     </div>
@@ -886,7 +877,7 @@
                 <div class="dataAll">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit1">xxxxx分析</div>
+                            <div class="data_tit1">区域分析</div>
                             <p class="data_chart" id="rode01"></p>
                         </div>
                     </div>
@@ -897,7 +888,7 @@
                 <div class="dataAll maginS">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit1">xxxxxx分析</div>
+                            <div class="data_tit1">趋势分析</div>
                             <p class="data_chart" id="bookAret"></p>
                         </div>
                     </div>
@@ -905,7 +896,7 @@
                 <div class="dataAll">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit1">xxxxxxx分析</div>
+                            <div class="data_tit1">流量分析</div>
                             <p class="data_chart" id="bookBmonth"></p>
                         </div>
                     </div>
@@ -913,7 +904,7 @@
                 <div class="dataAll">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit1">xxxxxxx分析</div>
+                            <div class="data_tit1">设备分析</div>
                             <p class="data_chart" id="whearAbook"></p>
                         </div>
                     </div>
@@ -928,46 +919,44 @@
 
                             <table class="table_data01" >
                                 <tr><td>总数</td><td colspan="3" class="font01">56320</td></tr>
-                                <tr><td>xxxxxx数</td><td colspan="3" class="font02">56320</td></tr>
+                                <tr><td>报警事件数</td><td colspan="3" class="font02">56320</td></tr>
                                 <tr>
-                                    <td>xxxxx数：</td>
+                                    <td>风险等级数：</td>
                                     <td>10个</td>
                                     <td>类型数：</td>
                                     <td>6个</td>
                                 </tr>
                                 <tr>
-                                    <td>xxxx最多数：</td>
+                                    <td>高峰时段：</td>
                                     <td>16-20点</td>
-                                    <td>xxxxx最多月：</td>
+                                    <td>高发月份：</td>
                                     <td>12月</td>
                                 </tr>
                                 <tr>
-                                    <td>xxxxx最多季节：</td>
-                                    <td>xxxx</td>
-                                    <td>xxxxx天气：</td>
+                                    <td>高发季节：</td>
+                                    <td>春季</td>
+                                    <td>高发天气：</td>
                                     <td>晴天</td>
                                 </tr>
                                 <tr>
-                                    <td>xxxxxx：</td>
-                                    <td>套餐A</td>
-                                    <td>xxxxxx：</td>
-                                    <td>活动</td>
+                                    <td>主要风险：</td>
+                                    <td>交通拥堵</td>
+                                    <td>次要风险：</td>
+                                    <td>设备故障</td>
                                 </tr>
                                 <tr>
-                                    <td>xxxxxx：</td>
+                                    <td>异常情况：</td>
                                     <td>交通畅通</td>
-                                    <td>xxxxx特殊时间：</td>
+                                    <td>特殊预警：</td>
                                     <td>国庆节</td>
                                 </tr>
                                 <tr>
-                                    <td>xxxxx：</td>
-                                    <td colspan="3" style="color: red">xxxxxB</td>
-
+                                    <td>预警等级：</td>
+                                    <td colspan="3" style="color: red">紧急</td>
                                 </tr>
                                 <tr>
-                                    <td>xxxxx多季节：</td>
+                                    <td>事件高发季节：</td>
                                     <td colspan="3" style="color: red">冬季</td>
-
                                 </tr>
 
                             </table>
@@ -978,7 +967,7 @@
                 <div class="dataAll02">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit1">xxxxx分析</div>
+                            <div class="data_tit1">告警分析</div>
                             <p class="data_chart" id="rodeAbook"></p>
                         </div>
                     </div>
@@ -988,7 +977,7 @@
                 <div class="dataAll maginS">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit1">xxxxx分析</div>
+                            <div class="data_tit1">趋势分析</div>
                             <p class="data_chart" id="seaAbook01"></p>
                         </div>
                     </div>
@@ -996,7 +985,7 @@
                 <div class="dataAll">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit1">xxxxx订单分析</div>
+                            <div class="data_tit1">异常行为分析</div>
                             <p class="data_chart" id="actionBook"></p>
                         </div>
                     </div>
@@ -1004,7 +993,7 @@
                 <div class="dataAll">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit1">xxxxxx分析</div>
+                            <div class="data_tit1">系统性能分析</div>
                             <p class="data_chart" id="sperceBook01"></p>
                         </div>
                     </div>
@@ -1089,7 +1078,7 @@
                 <div class="dataAllNo02 ">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit">xxxxxxx分析</div>
+                            <div class="data_tit">事件趋势分析</div>
                             <p class="data_chart02" id="shijian01"></p>
 
                         </div>
@@ -1101,10 +1090,10 @@
                 <div class="dataAllNo02 ">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit">xxxxx分析</div>
+                            <div class="data_tit">事件统计分析</div>
                             <table class="table_data02">
-                                <tr><td class="font07">事件类型</td><td class="font03">5个</td><td class="font07">xxxx</td><td class="font02">560万</td></tr>
-                                <tr><td class="font07">最多发生事件</td><td class="font01">xxxx</td><td class="font07">最少发生事件</td><td class="font01">xxxxx</td></tr>
+                                <tr><td class="font07">事件类型</td><td class="font03">5个</td><td class="font07">损失金额</td><td class="font02">560万</td></tr>
+                                <tr><td class="font07">最多发生事件</td><td class="font01">安全事故</td><td class="font07">最少发生事件</td><td class="font01">设备故障</td></tr>
 
                             </table>
                             <p class="data_chart02" id="shijian03"></p>
@@ -1118,7 +1107,7 @@
                 <div class="dataAllNo02">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit">xxxx分析</div>
+                            <div class="data_tit">预警类型分析</div>
                             <p class="data_chart02" id="shijian02"></p>
                         </div>
                     </div>
@@ -1129,7 +1118,7 @@
                 <div class="dataAllNo02">
                     <div class="dataAllBorder01">
                         <div class="dataAllBorder02">
-                            <div class="data_tit">xxxxxx分析</div>
+                            <div class="data_tit">响应效率分析</div>
 
                             <p class="data_chart03" id="shijian04"></p>
                         </div>
@@ -1148,15 +1137,15 @@
                             <table class="table table-bordered">
                                 <tbody>
                                 <tr>
-                                    <td>xxxx总数</td>
+                                    <td>游客总数</td>
                                     <td colspan="3">25414人</td>
                                 </tr>
                                 <tr>
-                                    <td>xxxxx</td>
+                                    <td>主要客源地</td>
                                     <td colspan="3">省内游客</td>
                                 </tr>
                                 <tr>
-                                    <td>xxxxx</td>
+                                    <td>游客年龄分布</td>
                                     <td colspan="3">青年</td>
                                 </tr>
                                 <tr>
@@ -1179,26 +1168,26 @@
                                 </tr>
                                 </tbody>
                             </table>
-                            <p>xxxxx数据汇总</p>
+                            <p>游客数据汇总</p>
                         </div>
                         <div class="manage_left_top">
                             <div class="manage_top_left l_left">
                                 <div id="container2" style="height: 90%"></div>
-                                <p>xxxxx分析</p>
+                                <p>游客性别分析</p>
                             </div>
                             <div class="manage_top_left l_left">
                                 <div id="container1" style="height: 90%"></div>
-                                <p>xxxx分析</p>
+                                <p>游客年龄分析</p>
                             </div>
                             <div class="manage_top_left l_left">
                                 <div id="container3" style="height:90%"></div>
-                                <p>xxxx分析</p>
+                                <p>游客来源分析</p>
                             </div>
 
                         </div>
                         <div class="manage_top_middle">
                             <div id="container4" style="height: 90%"></div>
-                            <p>xxxx数据分析</p>
+                            <p>客流变化趋势分析</p>
                         </div>
                         <!--<div class="manage_top_middle l_left">-->
                         <!--<div id="container5" style="height: 90%"></div>-->
@@ -1213,15 +1202,15 @@
                     <div class="manage_line2">
                         <div class="manage_top_middle l_left">
                             <div id="container9" style="height: 90%"></div>
-                            <p>xxxx情况</p>
+                            <p>设备运行情况</p>
                         </div>
                         <div class="manage_top_middle l_left">
                             <div id="container10" style="height: 90%"></div>
-                            <p>xxxx分析</p>
+                            <p>设备故障分析</p>
                         </div>
                         <div class="manage_top_middle l_left">
                             <div id="container11" style="height: 90%"></div>
-                            <p>xxxx分析</p>
+                            <p>设备维护分析</p>
                         </div>
                     </div>
                 </div>
@@ -1232,15 +1221,15 @@
                     <div class="manage_line2">
                         <div class="manage_top_middle">
                             <div id="container12" style="height: 90%"></div>
-                            <p>xxxxx排行</p>
+                            <p>热门景点排行</p>
                         </div>
                         <div class="manage_top_middle">
                             <div id="container6" style="height: 90%"></div>
-                            <p>xxxx数据分析</p>
+                            <p>游客满意度分析</p>
                         </div>
                         <div class="manage_top_middle l_left">
                             <div id="container5" style="height: 90%"></div>
-                            <p>xxxxx数据分析</p>
+                            <p>紧急事件响应分析</p>
                         </div>
                     </div>
                 </div>
@@ -1256,62 +1245,51 @@
                             <table class="table table-bordered">
                                 <tbody>
                                 <tr>
-                                    <td>xxxx总数</td>
-                                    <td colspan="3">965人</td>
+                                    <td>人员总数</td>
+                                    <td colspan="3">25414人</td>
                                 </tr>
                                 <tr>
-                                    <td>xxxx工作人员</td>
-                                    <td>625人</td>
-                                    <td>xxxx工作人员</td>
-                                    <td>340人</td>
+                                    <td>主要来源</td>
+                                    <td colspan="3">省内游客</td>
                                 </tr>
                                 <tr>
-                                    <td>xxxx</td>
-                                    <td>急救部</td>
-                                    <td>xxxx工作人员</td>
-                                    <td>xxx（99%）</td>
+                                    <td>主要年龄段</td>
+                                    <td colspan="3">青年</td>
                                 </tr>
                                 <tr>
-                                    <td>xxx</td>
-                                    <td>售票部</td>
-                                    <td>xxxx</td>
-                                    <td>安保部</td>
+                                    <td>男性游客</td>
+                                    <td>5424人</td>
+                                    <td>女性游客</td>
+                                    <td>5457人</td>
                                 </tr>
                                 <tr>
-                                    <td>xxx</td>
-                                    <td>李焕</td>
-                                    <td>xxx</td>
-                                    <td>周伟</td>
+                                    <td>团队游客</td>
+                                    <td>5424人</td>
+                                    <td>散客</td>
+                                    <td>5457人</td>
                                 </tr>
                                 <tr>
-                                    <td>xxxx主要原因</td>
-                                    <td>人为损坏</td>
-                                    <td>xxx处理情况</td>
-                                    <td>均及时进行设备处理</td>
+                                    <td>同比</td>
+                                    <td>下降5%</td>
+                                    <td>环比</td>
+                                    <td>上升5.6%</td>
                                 </tr>
-                                <!--<tr>-->
-                                <!--<td>年度最佳员工</td>-->
-                                <!--<td>李进</td>-->
-                                <!--<td>重点观察员工</td>-->
-                                <!--<td>周伟</td>-->
-                                <!--</tr>-->
-
                                 </tbody>
                             </table>
-                            <p>xxx管理汇总</p>
+                            <p>人员统计数据汇总</p>
                         </div>
                         <div class="user_left_top">
                             <div class="user_top_left l_left">
                                 <div id="userContainerSex" style="height: 90%"></div>
-                                <p>工作人员性别占比</p>
+                                <p>来源地分析</p>
                             </div>
                             <div class="user_top_left l_left">
                                 <div id="userContainerManage" style="height: 90%"></div>
-                                <p>各部门人员占比</p>
+                                <p>性别分析</p>
                             </div>
                             <div class="user_top_left l_left">
                                 <div id="userContainerAge" style="height:90%"></div>
-                                <p>工作人员年龄段占比</p>
+                                <p>年龄分析</p>
                             </div>
 
                         </div>
@@ -1328,15 +1306,15 @@
                     <div class="user_line2">
                         <div class="user_top_middle l_left">
                             <div id="userContainerPersonal" style="height: 90%"></div>
-                            <p>xxx排行</p>
+                            <p>违纪人员排行</p>
                         </div>
                         <div class="user_top_middle l_left">
                             <div id="userContainerFlow" style="height: 90%"></div>
-                            <p>xxx分析</p>
+                            <p>考勤分析</p>
                         </div>
                         <div class="user_top_middle l_left">
                             <div id="userContainerIllegal" style="height: 90%"></div>
-                            <p>xxxx分析</p>
+                            <p>异常行为分析</p>
                         </div>
                     </div>
                 </div>
@@ -1347,16 +1325,16 @@
                     <div class="user_line2">
                         <div class="user_top_middle">
                             <div id="userContainerComplaint" style="height: 90%"></div>
-                            <p>xxxx情况</p>
+                            <p>投诉情况</p>
                         </div>
                         <div class="user_top_middle">
                             <div id="userContainerPrize" style="height: 90%"></div>
-                            <p>xxx分析</p>
+                            <p>奖励分析</p>
                         </div>
                         <div class="user_top_middle l_left">
                             <div class="user_right_left l_left">
                                 <div id="userContainerReason" style="height: 90%"></div>
-                                <p>xxx原因分析</p>
+                                <p>故障原因分析</p>
                             </div>
                             <div class="user_right_left l_left">
                                 <div id="userContainerHandle" style="height: 90%"></div>
@@ -1377,10 +1355,10 @@
 <script src="js/bstable/js/bootstrap-table.js"></script>
 <script type="text/javascript" src="js/jquery.pagination.js"></script>
 <script src="js/bstable/js/bootstrap-table-zh-CN.min.js"></script>
-<!--<script src="js/MainMap.js"></script>-->
+<script src="js/MainMap.js"></script>
 <script src="js/Home_page.js"></script>
 <script src="js/artDialog/artDialog.js"></script>
-<script src="js/artDialog/plugins/iframeTools.source.js"></script>
+
 <script>
     var number;
     $(function() {
@@ -1760,6 +1738,17 @@
 </script>
 <script>
     var map;
+    var markers = {}; // 用于存储不同图层类型的标记
+    var layerData = {}; // 全局变量，用于存储从后端获取的图层数据
+
+    // 定义图标映射表
+    var iconMap = {
+        'zt_monitor_device': 'images/mapIcon/枪机32.png',
+        'zt_environmental_sensor': 'images/mapIcon/环境.png',
+        'zt_patrol_robot': 'images/mapIcon/event.png',
+        'zt_patrol_drone': 'images/mapIcon/无人机.png'
+    };
+
     function mapInit(){
         map = new AMap.Map('map', {
             rotateEnable: true,
@@ -1791,10 +1780,90 @@
         toolBar.addTo(map);
     }
     
+    // 新增一个函数来处理地图加载后的逻辑
+    function initMapContent() {
+        // 模拟数据：这里可以替换为从后端加载的真实数据
+        // 增加随机偏移量，使标记点更分散，模拟校外分布
+        var baseLongitude = 106.427; // 西南大学经度
+        var baseLatitude = 29.825;  // 西南大学纬度
+        var spread = 0.05; // 扩大分散范围，大约 5 公里左右（粗略估算）
+
+        layerData = {
+            'zt_monitor_device': [ // 监控设备
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '监控设备A' },
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '监控设备B' },
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '监控设备C' },
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '监控设备D' }
+            ],
+            'zt_environmental_sensor': [ // 环境监测装置
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '环境监测装置A' },
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '环境监测装置B' },
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '环境监测装置C' }
+            ],
+            'zt_patrol_robot': [ // 巡逻机器人
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '巡逻机器人A' },
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '巡逻机器人B' },
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '巡逻机器人C' }
+            ],
+            'zt_patrol_drone': [ // 巡逻无人机
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '巡逻无人机A' },
+                { position: [baseLongitude + spread * (Math.random() - 0.5), baseLatitude + spread * (Math.random() - 0.5)], name: '巡逻无人机B' }
+            ]
+        };
+
+        // 在这里直接处理初始选中的复选框的地图显示，因为我们不再依赖后端数据加载
+        $('.display_type_chose').each(function() {
+            if ($(this).is(':checked')) {
+                var layerId = $(this).attr('id');
+                if (layerData[layerId]) {
+                    markers[layerId] = [];
+                    layerData[layerId].forEach(function(item) {
+                        var marker = new AMap.Marker({
+                            position: new AMap.LngLat(item.position[0], item.position[1]),
+                            title: item.name,
+                            icon: iconMap[layerId]
+                        });
+                        map.add(marker);
+                        markers[layerId].push(marker);
+                    });
+                }
+            }
+        });
+
+        // 为每个复选框添加事件监听器 (保持不变，它将使用更新后的 layerData)
+        $('.display_type_chose').on('change', function() {
+            var layerId = $(this).attr('id');
+            var isChecked = $(this).is(':checked');
+
+            if (isChecked) {
+                // 如果选中，添加标记
+                if (layerData[layerId]) { // 使用从后端加载的 layerData
+                    markers[layerId] = [];
+                    layerData[layerId].forEach(function(data) {
+                        var marker = new AMap.Marker({
+                            position: new AMap.LngLat(data.position[0], data.position[1]),
+                            title: data.name,
+                            icon: iconMap[layerId] // 使用对应的图标
+                        });
+                        map.add(marker);
+                        markers[layerId].push(marker);
+                    });
+                }
+            } else {
+                // 如果取消选中，移除标记
+                if (markers[layerId] && markers[layerId].length > 0) {
+                    map.remove(markers[layerId]);
+                    markers[layerId] = [];
+                }
+            }
+        });
+    }
+
     // 页面加载完成后初始化地图
     window.onload = function() {
         mapInit();
-    }
+        initMapContent(); // 调用新的函数来处理地图内容加载
+    };
 </script>
 
 </body>

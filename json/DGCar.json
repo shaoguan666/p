@@ -3,40 +3,40 @@
     {
       "id": "23134",
       "carno": "川A23521",
-      "company": "xxxxx厂",
-      "content": "xxxxx",
+      "company": "智慧交通有限公司",
+      "content": "运输货物中",
       "speed": "68",
       "load": "6000KG"
     },
     {
       "id": "72631",
       "carno": "川C23412",
-      "company": "xxxxx厂",
-      "content": "xxxxx",
+      "company": "城市物流集团",
+      "content": "正在执行巡逻任务",
       "speed": "68",
       "load": "6000KG"
     },
     {
       "id": "12343",
       "carno": "川A32D1",
-      "company": "xxxxx厂",
-      "content": "xxxxx",
+      "company": "安保服务公司",
+      "content": "运送紧急物资",
       "speed": "68",
       "load": "6000KG"
     },
     {
       "id": "5231",
       "carno": "川A92342",
-      "company": "xxxxx厂",
-      "content": "xxxxx",
+      "company": "市政环卫中心",
+      "content": "道路清扫作业",
       "speed": "68",
       "load": "6000KG"
     },
    {
       "id": "5231",
       "carno": "川A92342",
-      "company": "xxxxx厂",
-      "content": "xxxxx",
+      "company": "大数据监控中心",
+      "content": "例行检查中",
       "speed": "68",
       "load": "6000KG"
     }
